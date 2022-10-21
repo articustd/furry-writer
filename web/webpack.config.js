@@ -3,9 +3,14 @@ const path = require("path")
 
 module.exports = {
     devServer: {
+        client: {
+            overlay: true,
+            progress: true,
+            reconnect: true,
+        },
         open: true,
-        port: 5000,
-        historyApiFallback: true
+        port: 9000,
+        historyApiFallback: true,
     },
     entry: [path.resolve(__dirname, "src", "root.jsx")],
     module: {
@@ -36,6 +41,11 @@ module.exports = {
         })
     ],
     resolve: {
+        alias: {
+            "@common": path.resolve(__dirname, 'src', 'common'),
+            "@pages": path.resolve(__dirname, 'src', 'pages'),
+            "@services": path.resolve(__dirname, 'src', 'services')
+        },
         extensions: [".js", ".jsx"]
     }
 }

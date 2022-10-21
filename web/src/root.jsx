@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Dev from '@pages/dev';
 
-export default function Root() {
+function Root() {
     return (
-        <div>
-            <h1>Dev Page</h1>
-        </div>
+        <Dev/>
     )
 }
 
