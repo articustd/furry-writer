@@ -1,5 +1,5 @@
-# FA Replace
-A new furry community site. Name is currently TBD
+# Furry Writer
+A new furry writing site. Name is currently TBD
 
 All frontend pieces will be run in the `web` directory
 
