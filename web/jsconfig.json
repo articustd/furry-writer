@@ -1,17 +1,8 @@
 {
-    "compilerOptions": {
-        "jsx": "react",
-        "allowSyntheticDefaultImports": true,
-        "baseUrl": "./",
-        "paths": {
-            "@common/*": ["src/common"],
-            "@pages/*": ["src/pages"],
-            "@services/*": ["src/services"],
-            "@style/*": ["src/style"],
-            "@assets/*": ["src/assets"]
-        }
-    },
-    "exclude": [
-        "node_modules/*", "dist/*", ".github/*", ".vscode/*", "vendor/*"
-    ]
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"],
+      "@/components": ["./components"]
+    }
+  }
 }
